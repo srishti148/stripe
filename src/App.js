@@ -59,7 +59,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Signup />} />
+        <Route index element={<Signup userHandler={userHandler}  />} />
         <Route path="/login" element={<Login userHandler={userHandler} />} />
         <Route
           path="/plans"
